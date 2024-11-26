@@ -6,11 +6,15 @@ And I thought using album covers would make my website look better.
 With this idea, I will create a platform where users can list their favorite songs of the day and share the screenshots on their social media.
 ```
 
+---
+
 ## What I used
 
 > Vite + Vanilla js
 
 > Spotify API
+
+---
 
 ## Wireframe
 

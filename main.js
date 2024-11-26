@@ -1,3 +1,5 @@
+import "./main.module.css";
+
 // Spotify API - Client Credentials Flow
 async function getAccessToken() {
   const clientId = "c54f02feb1ab4054b5f6d79fe0207130";
@@ -38,6 +40,7 @@ async function searchSpotify(query) {
   }
 
   const data = await response.json();
+  console.dir(data);
   return data.tracks.items;
 }
 
@@ -54,6 +57,9 @@ async function handleSearch() {
           <p><strong>${track.name}</strong> by ${track.artists
           .map((a) => a.name)
           .join(", ")}</p>
+          <img class={image} src="${track.album.images[0].url}" alt="${
+          track.name
+        }" />
           <audio controls src="${track.preview_url}"></audio>
         </div>
       `
