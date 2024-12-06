@@ -2,14 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="public/pinkmusic.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today's Music Log</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Today's Music Log</h1>
-    <input type="text" id="search-input" placeholder="Search for a song..." />
-    <button id="search-btn">Search</button>
-    <div id="results"></div>
-    <script type="module" src="/main.js"></script>
+    <h1>
+      Today's Music Log
+      <svg
+        width="236"
+        height="203"
+        viewBox="0 0 236 203"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M97.8493 143.195C100.521 150.053 98.2324 158.193 92.1791 165.855C86.1343 173.506 76.392 180.594 64.3755 185.275C52.3589 189.957 40.389 191.327 30.7614 189.782C21.1204 188.235 13.9281 183.788 11.2564 176.93C8.58465 170.072 10.8733 161.932 16.9265 154.271C22.9714 146.62 32.7137 139.531 44.7302 134.85C56.7467 130.168 68.7167 128.798 78.3443 130.343C87.9853 131.89 95.1775 136.337 97.8493 143.195Z"
+          fill="#fff"
+          stroke="#fff"
+        />
+        <path
+          d="M224.924 124.142C227.596 131 225.307 139.14 219.254 146.802C213.209 154.453 203.467 161.541 191.45 166.223C179.434 170.904 167.464 172.275 157.836 170.73C148.195 169.182 141.003 164.736 138.331 157.878C135.659 151.02 137.948 142.88 144.001 135.218C150.046 127.567 159.788 120.479 171.805 115.797C183.821 111.116 195.791 109.745 205.419 111.29C215.06 112.838 222.252 117.284 224.924 124.142Z"
+          fill="#fff"
+          stroke="#fff"
+        />
+        <path d="M93 146V35.7736L220 8V131" stroke="#fff" stroke-width="12" />
+        <path d="M93 45L222.5 16" stroke="#fff" stroke-width="23" />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="200"
+        height="200"
+        viewBox="0 0 37 32"
+        stroke-width="5"
+      >
+        <path
+          stroke-width="5"
+          fill="currentColor"
+          d="M27 0a9.97 9.97 0 0 0-6.704 2.595A9.97 9.97 0 0 0 18.5 4.749a10 10 0 0 0-1.796-2.155A9.974 9.974 0 0 0 10 0C4.486 0 0 4.486 0 10c0 3.722 1.158 6.66 3.871 9.825c3.942 4.6 13.919 11.62 14.342 11.917a.496.496 0 0 0 .574 0c.423-.297 10.4-7.317 14.343-11.917C35.842 16.66 37 13.722 37 10c0-5.514-4.486-10-10-10zm5.371 19.175C28.876 23.251 20.191 29.516 18.5 30.72c-1.691-1.204-10.376-7.469-13.87-11.545C2.085 16.206 1 13.462 1 10c0-4.963 4.038-9 9-9c2.227 0 4.37.829 6.032 2.335a9 9 0 0 1 2.02 2.664c.17.34.726.34.896 0a8.984 8.984 0 0 1 2.02-2.663A8.968 8.968 0 0 1 27 1c4.962 0 9 4.037 9 9c0 3.462-1.085 6.206-3.629 9.175z"
+        />
+      </svg>
+    </h1>
+    <section>
+      <div class="introduction">
+        Search for the best song you heard today and save it to the list.<br />
+        Capture and share the saved list!
+      </div>
+      <div class="search-wrapper">
+        <div class="search-input__form">
+          <span>
+            <label for="search" class="search-label"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </label>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search for a song..."
+            />
+          </span>
+          <button class="search-btn">Search</button>
+        </div>
+        <div class="search-results__wrapper">
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="saved-tracks"></div>
+    </main>
+    <script type="module" src="/js/spotify.js"></script>
+    <script type="module" src="/js/sound.js"></script>
   </body>
 </html>

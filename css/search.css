@@ -1,0 +1,177 @@
+@import "chakra-patch/chakra-patch.css";
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100vw;
+}
+
+.introduction {
+  font-family: "Chakra Petch Light Regular";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 2rem;
+  letter-spacing: -0.5px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  /* color: var(--pink); */
+  /* background: linear-gradient(
+    140deg,
+    rgba(217, 217, 217, 0) 50%,
+    var(--pink) 100%
+  ); */
+}
+
+.search-wrapper {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-input__form {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input__form span {
+  width: 60%;
+  height: 3rem;
+  position: relative;
+}
+
+.search-input__form span label {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateY(50%);
+}
+
+.search-input__form span label svg {
+  width: 100%;
+  height: 100%;
+  color: var(--pink);
+  stroke-width: 2;
+}
+
+.search-input__form span input {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  stroke: none;
+  transition: border 0.3s;
+  background: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  font-weight: 100;
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+.search-input__form input:focus {
+  outline: none;
+  stroke: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.search-input__form button {
+  background-color: var(--pink);
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+.search-input__form button:hover {
+  background-color: black;
+}
+
+.search-results__wrapper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  /* background-color: white; */
+  overflow-y: auto;
+}
+
+.search-results::-webkit-scrollbar {
+  width: 2px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
+  border-radius: 5px;
+}
+
+.search-result__div {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: s-resize;
+  transition: background-color 0.3s;
+}
+
+.search-result__div:hover {
+  /* background-color: black; */
+  background-color: var(--pink);
+}
+
+.search-result__div:hover p strong,
+.search-result__div:hover p span {
+  color: white;
+}
+
+.search-result__div p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-result__div p strong {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--pink);
+  transition: color 0.3s;
+}
+
+.search-result__div p span {
+  color: black;
+  font-weight: 200;
+  transition: color 0.3s;
+}
+
+.search-result__div img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 4px;
+}

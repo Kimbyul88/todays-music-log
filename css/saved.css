@@ -1,0 +1,50 @@
+@import "chakra-patch/chakra-patch.css";
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+main {
+  padding: 2rem 2rem;
+  font-family: "Chakra Petch Italic", "NanumSquare", "Pretendard";
+}
+
+.saved-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.saved-track__single {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: fit-content;
+  gap: 1.5rem;
+  max-width: 90vw;
+}
+
+.saved-track__single img {
+  width: 5rem;
+  height: 5rem;
+  /* filter: sepia(1) hue-rotate(296deg) saturate(5); */
+}
+
+.saved-track__single span {
+  padding: 0 3px 0 0;
+  /* font-style: italic; */
+  color: white;
+  color: var(--pink);
+  height: fit-content;
+  font-size: 5rem;
+  /* background-color: var(--pink); */
+  letter-spacing: -5px;
+  /* background-color: white; */
+  /* transform: translateY(30px); */
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* overflow-y: visible; */
+}
+
+.saved-track__single span:hover {
+  color: white;
+  background-color: var(--pink);
+  cursor: default;
+}
