@@ -2,12 +2,14 @@
 @import "saved.css";
 @import "chakra-patch/chakra-patch.css";
 @import "header.css";
+@import "edit.css";
 
 :root {
   --bg-color: #d6d5dc;
   --pink: #ff00a9;
   --white: #fff;
   --black: #000;
+  --theme-white: #fff;
 }
 
 * {
@@ -40,10 +42,11 @@ h1 {
   font-size: 1.7rem;
   font-weight: 600;
   color: var(--white);
-  background: linear-gradient(90deg, var(--pink) 30%, rgba(0, 0, 0, 0) 90%);
+  background: linear-gradient(90deg, var(--pink) 30%, var(--bg-color) 90%);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   padding: 0rem 1.5rem;
   letter-spacing: -1px;
+  z-index: 3;
 }
 
 h1 div {
@@ -61,4 +64,53 @@ h1 svg {
   width: 1.9rem;
   height: 1.9rem;
   object-fit: contain;
+}
+
+h1 svg path {
+  fill: var(--white);
+}
+
+.capture-btn {
+  background: var(--bg-color);
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: url("/cursor/mint2.svg"), auto;
+  transition: all 0.3s;
+}
+
+.capture-btn svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--pink);
+  cursor: url("/cursor/mint2.svg"), auto;
+}
+
+.capture-btn svg path {
+  cursor: url("/cursor/mint2.svg"), auto;
+}
+
+.capture-btn:active,
+.capture-btn svg:active,
+.capture-btn svg path:active {
+  cursor: url("/cursor/mint2clicked.svg"), auto;
+}
+
+.capture-btn:active {
+  scale: 0.9;
+}
+
+.capture-btn:hover {
+  background: var(--pink);
+  box-shadow: -3px -4px 9.6px 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+.capture-btn:hover svg {
+  color: var(--theme-white);
 }

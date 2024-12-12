@@ -1,5 +1,5 @@
 import {
-  buttonClickSound,
+  // buttonClickSound,
   buttonClickSound2,
   buttonClickSound3,
 } from "./sound";
@@ -96,9 +96,10 @@ function saveTrack(track) {
       image: track.album.images[0].url,
     });
     updateSavedTracksUI();
+    updateToEditPopup();
   } else {
     // 중복 저장 시 콘솔에 로그 출력
-    console.log("Track is already saved!");
+    // console.log("Track is already saved!");
   }
 }
 
@@ -109,10 +110,10 @@ function updateSavedTracksUI() {
 
   savedTracksContainer.innerHTML = savedTracks
     .map(
-      (track, index) => `
+      (track) => `
       <div class="saved-track__single">
         <figure>
-        <img src="${track.image}" alt="${track.name}" />
+        <img src="${track.image}" alt="${track.name}"/>
         <div></div>
         </figure>
         <span>${track.name}
@@ -129,11 +130,53 @@ function updateSavedTracksUI() {
       buttonClickSound2(); // 사운드를 재생
     });
   });
+  const resultDivImgs = document.querySelectorAll("img");
+  resultDivImgs.forEach((img) => {
+    img.setAttribute("crossorigin", "anonymous");
+  });
+}
+
+//편집 창에도 더하기
+function updateToEditPopup() {
+  const editPopup = document.querySelector(".edit-popup__content");
+  if (!editPopup) return;
+  editPopup.innerHTML = savedTracks
+    .map(
+      (track, index) => `
+      <div class="edit-track" data-index="${index}">
+        <span>${track.name}
+        </span>
+       <button>
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path d="M6 18 18 6M6 6l12 12" />
+</svg>
+       </button>
+
+      </div>
+    `
+    )
+    .join("");
+
+  // 버튼 클릭 이벤트 추가
+  const editButtons = document.querySelectorAll(".edit-track button");
+  editButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      buttonClickSound3();
+      const trackIndex = button.closest(".edit-track").dataset.index;
+      removeTrackFromSavedTracks(parseInt(trackIndex, 10));
+    });
+  });
+}
+
+// 저장된 트랙에서 제거하는 함수
+function removeTrackFromSavedTracks(index) {
+  // 해당 인덱스의 트랙 삭제
+  if (index >= 0 && index < savedTracks.length) {
+    savedTracks.splice(index, 1); // 배열에서 삭제
+    updateSavedTracksUI(); // 저장된 트랙 UI 업데이트
+    updateToEditPopup(); // 편집 팝업 업데이트
+  }
 }
 
 // DOM 이벤트 연결
 document.querySelector(".search-btn").addEventListener("click", handleSearch);
-
-{
-  /* <audio controls src="${track.preview_url}"></audio> */
-}

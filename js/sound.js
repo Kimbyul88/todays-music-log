@@ -18,4 +18,9 @@ export function typingSound() {
   audio.play();
 }
 
+export function cameraSound() {
+  var audio = new Audio("/sound/camera.mp3");
+  audio.play();
+}
+
 document.querySelector(".search-input").addEventListener("input", typingSound);

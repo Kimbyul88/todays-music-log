@@ -1,8 +1,21 @@
+import { buttonClickSound, buttonClickSound3 } from "./sound";
+
 const toolsInfoBtn = document.querySelector(".tools_info");
 const infoPopup = document.querySelector(".info-popup");
 
 toolsInfoBtn.addEventListener("click", () => {
-  toolsInfoBtn.classList.toggle("btn-active");
+  buttonClickSound3();
+  if (toolsInfoBtn.classList.contains("btn-active")) {
+    toolsInfoBtn.classList.add("btn-inactive");
+    setTimeout(() => {
+      toolsInfoBtn.classList.remove("btn-active");
+      toolsInfoBtn.classList.remove("btn-inactive");
+    }, 500);
+  } else {
+    toolsInfoBtn.classList.remove("btn-inactive");
+    toolsInfoBtn.classList.add("btn-active");
+  }
+  //
   if (infoPopup.classList.contains("popup-show")) {
     infoPopup.classList.add("popup-hide");
     setTimeout(() => {
@@ -14,11 +27,22 @@ toolsInfoBtn.addEventListener("click", () => {
   }
 });
 
+//
 const toolsColorBtn = document.querySelector(".tools_color");
 const colorPopup = document.querySelector(".color-popup");
 
 toolsColorBtn.addEventListener("click", () => {
-  toolsColorBtn.classList.toggle("btn-active");
+  buttonClickSound3();
+  if (toolsColorBtn.classList.contains("btn-active")) {
+    toolsColorBtn.classList.add("btn-inactive");
+    setTimeout(() => {
+      toolsColorBtn.classList.remove("btn-active");
+      toolsColorBtn.classList.remove("btn-inactive");
+    }, 500);
+  } else {
+    toolsColorBtn.classList.remove("btn-inactive");
+    toolsColorBtn.classList.add("btn-active");
+  }
   if (colorPopup.classList.contains("popup-show")) {
     colorPopup.classList.add("popup-hide");
     setTimeout(() => {
@@ -39,6 +63,19 @@ const colorBtns = document.querySelectorAll(".color-btn");
 
 colorBtns.forEach((colorBtn) => {
   colorBtn.addEventListener("click", () => {
+    buttonClickSound();
+    if (
+      colorBtn.classList.contains("yellow") ||
+      colorBtn.classList.contains("green") ||
+      colorBtn.classList.contains("skyblue") ||
+      colorBtn.classList.contains("pink3")
+    ) {
+      document.documentElement.style.setProperty("--theme-white", "black");
+      document.documentElement.style.setProperty("--bg-color", "#CECDD4");
+    } else {
+      document.documentElement.style.setProperty("--theme-white", "white");
+      document.documentElement.style.setProperty("--bg-color", "#d6d5dc");
+    }
     const color = colorBtn.getAttribute("data-color");
     document.documentElement.style.setProperty("--pink", color);
   });
