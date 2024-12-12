@@ -22,12 +22,26 @@ main {
   gap: 1.5rem;
   max-width: 90vw;
   word-break: break-all;
+  @media (max-width: 768px) {
+    gap: 0.2rem;
+  }
+  @media (max-width: 430px) {
+    gap: 0.1rem;
+  }
 }
 
 .saved-track__single img {
-  width: 5rem;
-  height: 5rem;
+  width: 5.5vw;
+  height: 5.5vw;
   filter: grayscale(1);
+  @media (max-width: 768px) {
+    width: 9vw;
+    height: 9vw;
+  }
+  @media (max-width: 430px) {
+    width: 9vw;
+    height: 9vw;
+  }
 }
 
 .saved-track__single figure:hover > img {
@@ -39,7 +53,7 @@ main {
   color: var(--theme-white);
   color: var(--pink);
   height: fit-content;
-  font-size: 5rem;
+  font-size: 5.5vw;
   letter-spacing: -5px;
   text-wrap: nowrap;
   text-overflow: ellipsis;
@@ -49,6 +63,13 @@ main {
   position: relative;
   word-break: break-all;
   white-space: nowrap;
+  @media (max-width: 768px) {
+    letter-spacing: -3px;
+    font-size: 9vw;
+  }
+  @media (max-width: 430px) {
+    font-size: 9vw;
+  }
 }
 
 .saved-track__single span:hover {

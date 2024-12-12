@@ -5,6 +5,11 @@ section {
   grid-template-columns: 1.8fr 3fr;
   width: 100vw;
   height: 35vh;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    height: 45vh;
+    position: relative;
+  }
 }
 
 .introduction {
@@ -17,6 +22,12 @@ section {
   font-size: 1.5rem;
   font-weight: 100;
   overflow: hidden;
+  @media (max-width: 768px) {
+    /* display: none; */
+    position: absolute;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
 }
 
 .introduction img {
@@ -32,6 +43,10 @@ section {
   align-items: center;
   gap: 1rem;
   position: relative;
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+    /* background-color: var(--bg-color); */
+  }
 }
 
 .search-input__form {
@@ -41,12 +56,18 @@ section {
   justify-content: center;
   display: flex;
   gap: 0.5rem;
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 }
 
 .search-input__form span {
   width: 60%;
   height: 3rem;
   position: relative;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .search-input__form span label {
@@ -117,6 +138,9 @@ section {
   display: flex;
   justify-content: center;
   position: relative;
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 }
 
 .search-results {
@@ -124,6 +148,9 @@ section {
   width: 70%;
   height: 100%;
   overflow-y: auto;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 
 .search-results::-webkit-scrollbar {
@@ -141,6 +168,10 @@ section {
   padding: 1rem;
   border-bottom: 0.9px solid rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+  @media (max-width: 768px) {
+    background: rgba(217, 217, 217, 0.33);
+    backdrop-filter: blur(5px);
+  }
 }
 
 .search-result__div:hover {

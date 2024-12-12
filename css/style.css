@@ -47,6 +47,9 @@ h1 {
   padding: 0rem 1.5rem;
   letter-spacing: -1px;
   z-index: 3;
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 }
 
 h1 div {
@@ -64,6 +67,16 @@ h1 svg {
   width: 1.9rem;
   height: 1.9rem;
   object-fit: contain;
+  @media (max-width: 768px) {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+.heart-icon {
+  @media (max-width: 430px) {
+    display: none;
+  }
 }
 
 h1 svg path {
