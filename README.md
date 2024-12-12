@@ -27,6 +27,7 @@ https://todays-music-log.vercel.app
 
 - Header Buttons & PopUp
   <img src="./public/readme/screen2.png" alt="mobile version 1" width="200">
+  ![image](./public/readme/screen3.png)
 
 - How to Search
   ![image](./public/readme/screen4.png)
