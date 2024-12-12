@@ -26,8 +26,7 @@ https://todays-music-log.vercel.app
   ![image](./public/readme/screen1.png)
 
 - Header Buttons & PopUp
-  ![image](./public/readme/screen2.png)
-  ![image](./public/readme/screen3.png)
+  <img src="./public/readme/screen2.png" alt="mobile version 1" width="200">
 
 - How to Search
   ![image](./public/readme/screen4.png)
@@ -43,14 +42,25 @@ https://todays-music-log.vercel.app
   ![image](./public/readme/screen7.png)
 
 - mobile version
-  ![image](./public/readme/screen8.png)
-  ![image](./public/readme/screen9.png)
-  ![image](./public/readme/screen10.png)
-  ![image](./public/readme/screen11.png)
+ <div style="display: flex; flex-wrap: nowrap; gap: 10px; overflow-x: auto;">
+  <img src="./public/readme/screen8.png" alt="mobile version 1" width="200">
+  <img src="./public/readme/screen9.png" alt="mobile version 2" width="200">
+  <img src="./public/readme/screen10.png" alt="mobile version 3" width="200">
+  <img src="./public/readme/screen11.png" alt="mobile version 4" width="200">
+</div>
 
 - if you click on the camera button, you can make the screenshot.
-  (these are the screenshots!)
-  ![image](./public/readme/capture1.jpg)
-  ![image](./public/readme/capture3.jpg)
-  ![image](./public/readme/capture2.jpg)
-  ![image](./public/readme/capture4.jpg)
+(these are the screenshots!)
+<div style="display: flex; justify-content:flex-start flex-wrap: nowrap; gap: 10px; overflow-x: auto; margin-bottom:10px">
+  <img src="./public/readme/capture1.jpg" alt="mobile version 1" width="200">
+  <img src="./public/readme/capture3.jpg" alt="mobile version 2" width="200">
+</div>
+
+<div style="display: flex; flex-wrap: nowrap; gap: 10px; overflow-x: auto;">
+  <img src="./public/readme/capture2.jpg" alt="mobile version 1" width="200">
+  <img src="./public/readme/capture4.jpg" alt="mobile version 2" width="200">
+</div>
+
+## Future plan
+
+- try to change Main image (gif)
