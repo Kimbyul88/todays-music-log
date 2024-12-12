@@ -1,12 +1,14 @@
 @import "search.css";
-@import "main.css";
 @import "saved.css";
+@import "chakra-patch/chakra-patch.css";
+@import "header.css";
 
 :root {
   --bg-color: #d6d5dc;
   --blue: #000bf2;
   --orange: #f65617;
-  --pink: #0c4af0;
+  --pink: #ff00a9;
+  --mint: #65ffa2;
 }
 
 * {
@@ -17,6 +19,7 @@
   border: 0;
   font-size: 100%;
   font: inherit;
+  cursor: url("/cursor/mintd.svg"), auto;
 }
 
 body {
@@ -27,21 +30,34 @@ body {
   display: grid;
   grid-template-rows: 4rem 1fr 1.7fr;
   background-color: var(--bg-color);
+  /* background-color: white; */
 }
 
 /*상단 타이틀*/
 h1 {
+  cursor: url("/cursor/mintd.svg"), auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   font-size: 1.7rem;
   font-weight: 600;
   color: white;
-  background: linear-gradient(90deg, var(--pink) 30%, rgba(255, 255, 255) 80%);
+  background: linear-gradient(90deg, var(--pink) 30%, rgba(0, 0, 0, 0) 90%);
   /* border-bottom: 1px solid black; */
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
   padding: 0rem 1.5rem;
   letter-spacing: -1px;
+}
+
+h1 div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h1 span {
+  width: fit-content;
+  height: fit-content;
 }
 
 h1 svg {

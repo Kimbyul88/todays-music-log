@@ -1,3 +1,9 @@
+import {
+  buttonClickSound,
+  buttonClickSound2,
+  buttonClickSound3,
+} from "./sound";
+
 // Spotify API - Client Credentials Flow
 async function getAccessToken() {
   const clientId = "c54f02feb1ab4054b5f6d79fe0207130";
@@ -45,7 +51,10 @@ async function searchSpotify(query) {
 const savedTracks = [];
 
 // 검색 실행 및 결과 표시
+// 검색 실행 및 결과 표시
 async function handleSearch() {
+  var audio = new Audio("/sound/click.mp3");
+  audio.play();
   const query = document.querySelector(".search-input").value;
   try {
     const results = await searchSpotify(query);
@@ -64,8 +73,12 @@ async function handleSearch() {
       .join("");
 
     // 각 결과에 클릭 이벤트 리스너 추가
-    document.querySelectorAll(".search-result__div").forEach((div, index) => {
-      div.addEventListener("click", () => saveTrack(results[index]));
+    const resultDivs = document.querySelectorAll(".search-result__div");
+    resultDivs.forEach((div, index) => {
+      div.addEventListener("click", () => {
+        buttonClickSound3(); // 사운드를 재생
+        saveTrack(results[index]);
+      });
     });
   } catch (error) {
     console.error(error.message);
@@ -98,12 +111,24 @@ function updateSavedTracksUI() {
     .map(
       (track, index) => `
       <div class="saved-track__single">
+        <figure>
         <img src="${track.image}" alt="${track.name}" />
-        <span>${track.name}</span>
+        <div></div>
+        </figure>
+        <span>${track.name}
+        <p></p><p></p><p></p><p></p>
+        </span>
       </div>
     `
     )
     .join("");
+
+  const resultDivs = document.querySelectorAll(".saved-track__single");
+  resultDivs.forEach((div) => {
+    div.addEventListener("mouseover", () => {
+      buttonClickSound2(); // 사운드를 재생
+    });
+  });
 }
 
 // DOM 이벤트 연결

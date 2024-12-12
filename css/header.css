@@ -1,0 +1,151 @@
+.right-tools {
+  position: relative;
+}
+
+.info-popup {
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  top: 170%;
+  right: 0;
+  width: 15vw;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+.info-popup::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  right: 4rem;
+  width: 0;
+  height: 0;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  border-bottom: 1rem solid white;
+}
+
+.info-popup__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-popup__content a {
+  width: 2rem;
+  height: 2rem;
+  z-index: 3;
+}
+
+.info-popup__content h2 {
+  color: var(--pink);
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.info-popup__content p {
+  font-family: "Chakra Petch Light Regular";
+}
+
+.info-popup__content a:hover,
+.github-icon:hover {
+  cursor: url("/cursor/mint2.svg"), auto;
+}
+
+.github-icon:hover g {
+  color: var(--pink);
+  fill: var(--pink);
+}
+
+.github-icon:active {
+  cursor: url("/cursor/mint2clicked.svg"), auto;
+}
+
+.question-icon:hover,
+.question-icon:hover path,
+.color-icon:hover,
+.color-icon:hover path {
+  color: var(--pink);
+  fill: var(--pink);
+  cursor: url("/cursor/mint2.svg"), auto;
+}
+
+.question-icon:active,
+.question-icon:active path,
+.color-icon:active,
+.color-icon:active path,
+.tools__circle:active {
+  cursor: url("/cursor/mint2clicked.svg"), auto;
+}
+
+.tools__circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  cursor: url("/cursor/mint2.svg"), auto;
+  transition: box-shadow 0.3s;
+}
+
+.tools__circle:hover {
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset;
+}
+
+.tools__circle:hover svg,
+.tools__circle:hover path {
+  fill: black;
+}
+
+.btn-active {
+  color: var(--pink);
+  animation: rotate 0.5s linear forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.popup-show {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+.popup-hide {
+  animation: faseOut 0.5s;
+}
+
+@keyframes faseOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
