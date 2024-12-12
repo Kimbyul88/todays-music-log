@@ -35,6 +35,7 @@ https://todays-music-log.vercel.app
     
 ## ⚡️ How to Search
   ![image](./public/readme/screen4.png)
+  ![image](./public/readme/cursor1.png)
 
 ## ☂️ If you add musics...
 
@@ -42,8 +43,8 @@ https://todays-music-log.vercel.app
 
 ## 🌏 If you hover on musics...
 
-![image](./public/readme/screen6.png)
-![image](./public/readme/screen6-2.png)
+![image](./public/readme/cursor2.png)
+![image](./public/readme/cursor3.png)
 
 ## 🌪️ You can also delete musics!
 
@@ -59,6 +60,8 @@ https://todays-music-log.vercel.app
 </div>
 
 ## 🍭 if you click on the camera button, you can make the screenshot.
+
+![image](./public/readme/cursor4.png)
 
 (these are the screenshots!)
 
