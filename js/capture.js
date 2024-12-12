@@ -4,10 +4,12 @@ import { cameraSound } from "./sound";
 let captureContent = document.querySelector("body");
 let captureBtn = document.querySelector(".capture-btn");
 const searchWrapper = document.querySelector(".search-wrapper");
+const rightTools = document.querySelector(".right-tools");
 
 function handleCaptureClick() {
   searchWrapper.style.display = "none";
   captureBtn.style.display = "none";
+  rightTools.style.display = "none";
   html2canvas(captureContent, {
     useCORS: true, // 외부 이미지를 캡처 가능하게 설정
     allowTaint: true, // 외부 이미지를 캡처 가능하게 설정
@@ -17,6 +19,7 @@ function handleCaptureClick() {
   cameraSound();
   searchWrapper.style.display = "flex";
   captureBtn.style.display = "flex";
+  rightTools.style.display = "flex";
 }
 
 const saveImg = (uri, filename) => {

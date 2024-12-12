@@ -99,6 +99,7 @@
   width: 1.5rem;
   height: 1.5rem;
   cursor: url("/cursor/mint2.svg"), auto;
+  stroke: var(--black);
 }
 
 .edit-track button:active,
@@ -161,14 +162,6 @@
   100% {
     top: -103%;
   }
-}
-
-.p-open {
-  /* animation: rotate 0.5s ease-in-out forwards; */
-}
-
-.p-close {
-  /* animation: rotateReverse 0.5s ease-in-out forwards; */
 }
 
 @keyframes rotateReverse {

@@ -35,6 +35,7 @@ body {
 
 /*상단 타이틀*/
 h1 {
+  font-family: "Chakra Petch Light Regular";
   cursor: url("/cursor/mintd.svg"), auto;
   display: flex;
   justify-content: space-between;
@@ -48,8 +49,8 @@ h1 {
   letter-spacing: -1px;
   z-index: 3;
   @media (max-width: 768px) {
-    font-size: 1.4rem;
-    letter-spacing: -1.5px;
+    font-size: 1.5rem;
+    letter-spacing: -2px;
   }
 }
 
