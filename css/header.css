@@ -3,6 +3,7 @@
 }
 
 .info-popup {
+  z-index: 2;
   display: none;
   position: absolute;
   font-size: 1rem;
@@ -10,8 +11,8 @@
   right: 0;
   width: 15vw;
   padding: 1rem;
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
 }
@@ -25,7 +26,7 @@
   height: 0;
   border-left: 0.7rem solid transparent;
   border-right: 0.7rem solid transparent;
-  border-bottom: 1rem solid white;
+  border-bottom: 1rem solid var(--white);
 }
 
 .info-popup__content {
@@ -102,7 +103,7 @@
 
 .tools__circle:hover svg,
 .tools__circle:hover path {
-  fill: black;
+  fill: var(--black);
 }
 
 .btn-active {
@@ -120,15 +121,15 @@
 }
 
 .popup-show {
-  display: block;
+  display: block !important;
   animation: fadeIn 0.5s;
 }
 
 .popup-hide {
-  animation: faseOut 0.5s;
+  animation: fadeOut 0.5s;
 }
 
-@keyframes faseOut {
+@keyframes fadeOut {
   0% {
     opacity: 1;
     transform: translateY(0);
@@ -148,4 +149,73 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.color-popup {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  top: 170%;
+  right: 0;
+  width: 4rem;
+  height: 20rem;
+  padding: 1rem;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+.color-popup__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.color-popup__content span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.color-popup::before {
+  content: "";
+  position: absolute;
+  top: -0.9rem;
+  right: 1rem;
+  width: 0;
+  height: 0;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  border-bottom: 1rem solid var(--white);
+}
+
+.color-btn {
+  cursor: url("/cursor/mint2.svg"), auto;
+  transition: border 0.3s;
+}
+
+.color-btn:hover {
+  opacity: 0.8;
+}
+
+.color-btn:active {
+  cursor: url("/cursor/mint2clicked.svg"), auto;
+  scale: 0.9;
+}
+
+.pink {
+  background-color: #ff00a9;
+}
+.yellow {
+  background-color: #f2f81a;
+}
+.blue {
+  background-color: #124ef0;
+}
+.green {
+  background-color: #ceff0b;
 }

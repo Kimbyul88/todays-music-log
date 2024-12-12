@@ -35,7 +35,7 @@ main {
 
 .saved-track__single span {
   padding: 0 3px 0 0;
-  color: white;
+  color: var(--white);
   color: var(--pink);
   height: fit-content;
   font-size: 5rem;
@@ -51,7 +51,7 @@ main {
 }
 
 .saved-track__single span:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--pink);
   border: 1.5px solid var(--pink);
   cursor: url("/cursor/cross4.svg"), auto;
@@ -68,7 +68,7 @@ main {
   height: 1rem;
   /* border: 1.5px solid var(--pink); */
   background-color: var(--bg-color);
-  background-color: white;
+  background-color: var(--white);
   z-index: -10;
 }
 
