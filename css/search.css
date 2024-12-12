@@ -57,7 +57,7 @@ section {
   display: flex;
   gap: 0.5rem;
   @media (max-width: 768px) {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 }
 
@@ -118,6 +118,10 @@ section {
   color: var(--theme-white);
   transition: background-color 0.3s;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 .search-input__form button:active {

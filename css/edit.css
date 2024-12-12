@@ -51,6 +51,7 @@
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
   border-bottom: 0.8rem solid var(--pink);
+  transform: rotate(180deg);
 }
 
 .open-btn:active,
@@ -70,6 +71,9 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  @media (max-width: 430px) {
+    font-size: 1.3rem;
+  }
 }
 
 .edit-track span {
@@ -160,11 +164,11 @@
 }
 
 .p-open {
-  animation: rotate 0.5s ease-in-out forwards;
+  /* animation: rotate 0.5s ease-in-out forwards; */
 }
 
 .p-close {
-  animation: rotateReverse 0.5s ease-in-out forwards;
+  /* animation: rotateReverse 0.5s ease-in-out forwards; */
 }
 
 @keyframes rotateReverse {
