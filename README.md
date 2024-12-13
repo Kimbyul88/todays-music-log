@@ -13,7 +13,9 @@ https://todays-music-log.vercel.app
 
 # What I used
 <img width=80 height="40" src="https://pbs.twimg.com/media/EtZYf1FWYAMmtHj.jpg"/>
-[![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)[![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)
+[![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)
+[![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)
 [![Spotify](https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://github-readme-stats.vercel.app/api/top-langs/?username=Kimbyul88&layout=compact)
 
