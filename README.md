@@ -12,7 +12,7 @@ and share the screenshots on their social media.
 https://todays-music-log.vercel.app
 
 # What I used
-
+![js](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
 <img width=80 src="https://pbs.twimg.com/media/EtZYf1FWYAMmtHj.jpg"/>
 <img width=80 src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
 <img width=80 src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
