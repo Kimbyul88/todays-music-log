@@ -12,11 +12,11 @@ and share the screenshots on their social media.
 https://todays-music-log.vercel.app
 
 # What I used
-<img width=80 height="25" src="https://pbs.twimg.com/media/EtZYf1FWYAMmtHj.jpg"/>
+<img width=80 height="40" src="https://pbs.twimg.com/media/EtZYf1FWYAMmtHj.jpg"/>
 <div style="display: flex; gap: 10px;">
   <img width="80" height="25" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="HTML badge">
   <img width="80" height="25" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS badge">
-  <img width="80" height="25" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" alt="JavaScript badge">
+  <img width="80" height="30" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" alt="JavaScript badge">
 </div>
 <div style="display: flex; gap: 10px;">
   <img width="80" height="25" src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify badge">
