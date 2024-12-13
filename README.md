@@ -83,4 +83,4 @@ https://todays-music-log.vercel.app
 
 # Future plan
 
-### - try to change Main image (gif)
+### - let users change Main image (gif)
