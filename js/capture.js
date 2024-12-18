@@ -1,7 +1,7 @@
 import html2canvas from "html2canvas";
 import { cameraSound } from "./sound";
 
-let captureContent = document.querySelector("body");
+let captureContent = document.querySelector("html");
 let captureBtn = document.querySelector(".capture-btn");
 const searchWrapper = document.querySelector(".search-wrapper");
 const rightTools = document.querySelector(".right-tools");
