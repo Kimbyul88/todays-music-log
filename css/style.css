@@ -23,6 +23,10 @@
   cursor: url("/cursor/mintd.svg"), auto;
 }
 
+html {
+  background-color: var(--bg-color);
+}
+
 body {
   font-family: "Chakra Petch Regular";
   line-height: 1;
