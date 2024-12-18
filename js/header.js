@@ -71,7 +71,7 @@ colorBtns.forEach((colorBtn) => {
       colorBtn.classList.contains("pink3")
     ) {
       document.documentElement.style.setProperty("--theme-white", "black");
-      document.documentElement.style.setProperty("--bg-color", "#CECDD4");
+      document.documentElement.style.setProperty("--bg-color", "#BEBDC4");
     } else {
       document.documentElement.style.setProperty("--theme-white", "white");
       document.documentElement.style.setProperty("--bg-color", "#d6d5dc");

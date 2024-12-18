@@ -131,7 +131,7 @@ section {
 }
 
 .search-input__form button:hover {
-  background-color: var(--black);
+  background-color: var(--theme-white);
   cursor: url("/cursor/mint2.svg"), auto;
   color: var(--pink);
 }

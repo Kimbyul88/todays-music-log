@@ -12,7 +12,7 @@
   font-size: 1rem;
   top: 140%;
   right: 0;
-  width: 15vw;
+  width: 20vw;
   padding: 1rem;
   background-color: var(--bg-color);
   /* background: linear-gradient(149deg, #e0e4e6 13.77%, #cac8d1 90.37%); */
@@ -62,7 +62,7 @@
 }
 
 .info-popup__content p {
-  font-family: "Chakra Petch Light Regular";
+  /* font-family: "Chakra Petch Light Regular"; */
 }
 
 .info-popup__content a:hover,
@@ -285,7 +285,7 @@
   background-color: #ff00a9;
 }
 .pink3 {
-  background-color: #fc9fd7;
+  background-color: #ffceec;
 }
 .pink2 {
   background-color: #f45e64;
